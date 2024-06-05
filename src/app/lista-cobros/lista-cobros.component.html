@@ -1,0 +1,17 @@
+<h2>Lista Cobros</h2>
+<table class="table table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let cobro of cobros">
+            <td>{{ cobro.nombre }}</td>
+            <td>{{ cobro.apellido }}</td>
+            <td>{{ cobro.email }}</td>
+        </tr>
+    </tbody>
+</table>

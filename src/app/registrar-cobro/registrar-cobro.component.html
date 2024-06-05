@@ -1,0 +1,30 @@
+<div class="col-md-6 offset-md-3">
+    <h3 class="text-center">Registro de Cobro</h3>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>Nombre: </label>
+            <input type="text"
+            class="form-control"
+            id="nombre"
+            [(ngModel)] = "cobro.nombre"
+            name="nombre"
+            >
+            <label>Apellido: </label>
+            <input type="text"
+            class="form-control"
+            id="apellido"
+            [(ngModel)] = "cobro.apellido"
+            name="apellido"
+            >
+            <label>Email: </label>
+            <input type="text"
+            class="form-control"
+            id="email"
+            [(ngModel)] = "cobro.email"
+            name="email"
+            >
+        </div>
+
+        <button class="btn btn-success">Guardar</button>
+    </form>
+</div>
